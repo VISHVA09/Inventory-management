@@ -1,0 +1,27 @@
+<ng-container *ngIf="itemSummary$ | async as itemSummary">
+  <mat-card>
+    <mat-card-content>
+      <mat-card-title>
+        <ng-container>
+          Item Summary - {{ itemSummary.date }}
+        </ng-container>
+      </mat-card-title>
+
+      <ng-container>
+        Daily Profit : <span class="daily-profit-value"><b>{{ itemSummary.dailyProfit | currency:'LKR':'Rs. ' }}</b></span>
+      </ng-container>
+
+      <br />
+
+      <ng-container>
+        No. of items sold : <span><b>{{ itemSummary.soldCount }}</b></span>
+      </ng-container>
+
+      <br />
+
+      <ng-container>
+        No. of items inserted : <span><b>{{ itemSummary.insertedCount }}</b></span>
+      </ng-container>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
