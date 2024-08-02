@@ -6,4 +6,4 @@ Name, Cost, Price, and Quantity. The system features item listing and filtering,
 
 In Document folder We have all document file, report.md folder has final report of our project and TESTING.md has testing file.
 
-In server/test/java/com/ims/server we have our jUnit test cases.
+In ```server/test/java/com/ims/server``` we have our jUnit test cases.
